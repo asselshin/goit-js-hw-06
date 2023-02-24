@@ -4,10 +4,6 @@ const value = document.getElementById('value');
 
 let counterValue = 0;
 
-// console.log(decrementBtn);
-// console.log(incrementBtn);
-// console.log(counterValue);
-
 const decrementClick = () => {
     counterValue -= 1;
     value.textContent = counterValue;

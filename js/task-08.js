@@ -1,5 +1,4 @@
 const form = document.querySelector('.login-form');
-// console.dir(form);
 
 let user = {};
 
@@ -12,6 +11,7 @@ form.addEventListener('submit', ev => {
 
     if (email.value.trim() === '' || password.value.trim() === '') {
         alert('Fill in all fields');
+        return;
     };
 
     user.email = email.value.trim();
@@ -19,7 +19,6 @@ form.addEventListener('submit', ev => {
     console.log(user);
 
     ev.target.reset();
-
 });
 
 

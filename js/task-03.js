@@ -14,7 +14,6 @@ const images = [
 ];
 
 const list = document.querySelector('.gallery');
-console.log(list);
 
 const image = images.map((im) => `<li> <img src=${im.url} alt = "${im.alt}"> </img> </li>`).join("");
 
